@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Protest+Strike&display=swap");
+* {
+  font-family: "Poppins";
+  /* font-size: 22px; */
+  margin: 0;
+  color: #929292;
+}
+body {
+  background: #ffe6c9;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  background: #fff;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  box-shadow: 0 4px 8px 0 black;
+  border-radius: 10px;
+}
+
+.container .left {
+  background: url("../assets/Bg\ Image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 3;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px;
+}
+
+.container .right {
+  flex: 2;
+  padding: 40px;
+
+}
+.container .right .right-cont {
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+}
+.container .right .one {
+    flex: 1;
+}
+.container .right .right-cont .logo img {
+  width: 40px;
+}
+.container .right .right-cont .msg {
+}
+.container .right .right-cont .msg h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.container .right .right-cont .msg p {
+    font-size: 10px;
+}
+.container .right .right-cont .google {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container .right .right-cont .google a{
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #bababa;
+    padding: 5px;
+    border-radius: 5px;
+}
+.container .right .right-cont .google a img{
+    width: 20px;
+    height: 20px;
+}
+.container .right .right-cont .google a p{
+    padding: 5px;
+}
+
+.container .right .right-cont .form {
+    margin-top: 10px;
+}
+.container .right .right-cont .form h4 {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.container .right .right-cont .form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container .right .right-cont .form p label {
+    color: #3e3e3e;
+}
+.container .right .right-cont .form p input {
+    border: 2px solid #bababa;
+    outline: 0;
+    padding: 5px;
+}
+.container .right .right-cont .form .rf {
+    display: flex;
+    flex-direction: row;
+}
+.container .right .right-cont .form .rf span {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.container .right .right-cont .form .rf span input {
+    margin-right: 5px;
+    color: #7f265b;
+}
+.container .right .right-cont .form .rf a {
+    color: #7f265b;
+}
+.container .right .right-cont .form p button {
+    background: #7f265b;
+    border: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.container .right .two {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.container .right .two p {
+    font-size: 10px;
+    margin-top: 30px;
+}
+.container .right .two p a {
+    color: #7f265b;
+}
+
+@media (max-width: 900px) {
+    body{
+        /* display: none; */
+    }
+    .container {
+        width: 96%;
+    }
+    .container .left {
+        display: none;
+    }
+}
